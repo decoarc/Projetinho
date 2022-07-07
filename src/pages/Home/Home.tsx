@@ -25,8 +25,10 @@ import {
 import Button from "../../components/Buttons/Button";
 import Logo from "../../Images/Logo.svg";
 import WLogo from "../../Images/WLogo.svg";
+import { Outlet, useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigation = useNavigate();
   return (
     <ContainerDiv>
       <PrimeiraDiv>
@@ -46,7 +48,9 @@ function Home() {
               </H1>
             </TextHeadDiv>
             <Button
-              onClick={() => {}}
+              onClick={() => {
+                navigation("Portfolio");
+              }}
               text="IR PARA PORTFOLIO"
               variant="primary"
             ></Button>
@@ -74,7 +78,9 @@ function Home() {
               </Body>
             </ThirdRightTextDiv>
             <Button
-              onClick={() => {}}
+              onClick={() => {
+                navigation("Portfolio");
+              }}
               text="IR PARA PORTFOLIO"
               variant="secondary1"
             ></Button>
@@ -86,7 +92,9 @@ function Home() {
             <H2>Interessado em fazer projetos comigo?</H2>
           </FourthTextDiv>
           <Button
-            onClick={() => {}}
+            onClick={() => {
+              navigation("Contato");
+            }}
             text="CONTATO"
             variant="secondary1"
           ></Button>
@@ -100,6 +108,7 @@ function Home() {
           <HeaderText style={{ color: "#FAFAFA" }}>CONTATO</HeaderText>
         </FootTextDiv>
       </FootDiv>
+      <Outlet />
     </ContainerDiv>
   );
 }

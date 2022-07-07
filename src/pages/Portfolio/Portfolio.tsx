@@ -8,10 +8,10 @@ import {
   FourthTextDiv,
   FootDiv,
   FootTextDiv,
-  H1,
   H2,
-  Body,
 } from "../Home/styles";
+
+import { useNavigate } from "react-router-dom";
 
 import Button from "../../components/Buttons/Button";
 import Logo from "../../Images/Logo.svg";
@@ -20,13 +20,14 @@ import ImageCard from "./Image/ImageCard";
 import Manage from "../../Images/Porto 1.jpg";
 
 function Portfolio() {
+  const navigation = useNavigate();
   return (
     <ContainerDiv>
       <PrimeiraDiv>
         <HeadDiv>
           <img src={Logo} alt="" />
           <TextHeadDiv>
-            <HeaderText style={{ color: "#5FB4A2" }}>HOME</HeaderText>
+            <HeaderText>HOME</HeaderText>
             <HeaderText>PORTFOLIO</HeaderText>
             <HeaderText>CONTATO</HeaderText>
           </TextHeadDiv>
@@ -76,7 +77,9 @@ function Portfolio() {
             <H2>Interessado em fazer projetos comigo?</H2>
           </FourthTextDiv>
           <Button
-            onClick={() => {}}
+            onClick={() => {
+              navigation("Contato");
+            }}
             text="CONTATO"
             variant="secondary1"
           ></Button>

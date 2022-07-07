@@ -22,7 +22,7 @@ const ImageCard = ({
     <ContainerDiv>
       {" "}
       {position === "left" && (
-        <img src={image} style={{ flex: 1, width: "50%" }} />
+        <img src={image} alt="" style={{ flex: 1, width: "50%" }} />
       )}
       <TextDiv style={{ flex: 1 }}>
         <Title>{title}</Title>
@@ -34,7 +34,7 @@ const ImageCard = ({
         ></Button>
       </TextDiv>
       {position === "right" && (
-        <img src={image} style={{ flex: 1, width: "50%" }} />
+        <img src={image} alt="" style={{ flex: 1, width: "50%" }} />
       )}
     </ContainerDiv>
   );
