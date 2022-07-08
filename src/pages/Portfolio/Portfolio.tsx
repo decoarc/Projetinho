@@ -24,14 +24,6 @@ function Portfolio() {
   return (
     <ContainerDiv>
       <PrimeiraDiv>
-        <HeadDiv>
-          <img src={Logo} alt="" />
-          <TextHeadDiv>
-            <HeaderText>HOME</HeaderText>
-            <HeaderText>PORTFOLIO</HeaderText>
-            <HeaderText>CONTATO</HeaderText>
-          </TextHeadDiv>
-        </HeadDiv>
         <ImageCard
           image={Manage}
           position="left"
@@ -78,7 +70,7 @@ function Portfolio() {
           </FourthTextDiv>
           <Button
             onClick={() => {
-              navigation("Contato");
+              navigation("/contato");
             }}
             text="CONTATO"
             variant="secondary1"

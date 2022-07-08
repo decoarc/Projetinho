@@ -32,14 +32,6 @@ function Home() {
   return (
     <ContainerDiv>
       <PrimeiraDiv>
-        <HeadDiv>
-          <img src={Logo} alt="" />
-          <TextHeadDiv>
-            <HeaderText style={{ color: "#5FB4A2" }}>HOME</HeaderText>
-            <HeaderText>PORTFOLIO</HeaderText>
-            <HeaderText>CONTATO</HeaderText>
-          </TextHeadDiv>
-        </HeadDiv>
         <SecondDiv>
           <CardSecondDiv>
             <TextHeadDiv>
@@ -49,7 +41,7 @@ function Home() {
             </TextHeadDiv>
             <Button
               onClick={() => {
-                navigation("Portfolio");
+                navigation("/portfolio");
               }}
               text="IR PARA PORTFOLIO"
               variant="primary"
@@ -79,7 +71,7 @@ function Home() {
             </ThirdRightTextDiv>
             <Button
               onClick={() => {
-                navigation("Portfolio");
+                navigation("/portfolio");
               }}
               text="IR PARA PORTFOLIO"
               variant="secondary1"
@@ -93,7 +85,7 @@ function Home() {
           </FourthTextDiv>
           <Button
             onClick={() => {
-              navigation("Contato");
+              navigation("/contato");
             }}
             text="CONTATO"
             variant="secondary1"
@@ -108,7 +100,6 @@ function Home() {
           <HeaderText style={{ color: "#FAFAFA" }}>CONTATO</HeaderText>
         </FootTextDiv>
       </FootDiv>
-      <Outlet />
     </ContainerDiv>
   );
 }

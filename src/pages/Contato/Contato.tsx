@@ -27,14 +27,6 @@ function Contato() {
   return (
     <ContainerDiv>
       <PrimeiraDiv>
-        <HeadDiv>
-          <img src={Logo} alt="" />
-          <TextHeadDiv>
-            <HeaderText>HOME</HeaderText>
-            <HeaderText>PORTFOLIO</HeaderText>
-            <HeaderText>CONTATO</HeaderText>
-          </TextHeadDiv>
-        </HeadDiv>
         <PrincDiv>
           <TitleDiv>
             <H2>Entre em Contato</H2>
